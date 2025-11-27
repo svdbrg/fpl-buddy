@@ -1,0 +1,20 @@
+{
+  "name": "fpl-analyzer-backend",
+  "version": "1.0.0",
+  "description": "FPL Autonomous Manager Backend",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "better-sqlite3": "^11.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "node-cron": "^3.0.3",
+    "tough-cookie": "^5.0.0"
+  }
+}

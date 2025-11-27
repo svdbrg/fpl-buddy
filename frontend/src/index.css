@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #1a0a1f 0%, #37003c 50%, #1a0a1f 100%);
+  min-height: 100vh;
+}
+
+.pitch-bg {
+  background: linear-gradient(to bottom,
+    #2d8a4e 0%,
+    #3a9d5c 5%,
+    #2d8a4e 5%,
+    #3a9d5c 10%,
+    #2d8a4e 10%,
+    #3a9d5c 15%,
+    #2d8a4e 15%,
+    #3a9d5c 20%,
+    #2d8a4e 20%,
+    #3a9d5c 25%,
+    #2d8a4e 25%,
+    #3a9d5c 30%,
+    #2d8a4e 30%,
+    #3a9d5c 35%,
+    #2d8a4e 35%,
+    #3a9d5c 40%,
+    #2d8a4e 40%,
+    #3a9d5c 45%,
+    #2d8a4e 45%,
+    #3a9d5c 50%,
+    #2d8a4e 50%,
+    #3a9d5c 55%,
+    #2d8a4e 55%,
+    #3a9d5c 60%,
+    #2d8a4e 60%,
+    #3a9d5c 65%,
+    #2d8a4e 65%,
+    #3a9d5c 70%,
+    #2d8a4e 70%,
+    #3a9d5c 75%,
+    #2d8a4e 75%,
+    #3a9d5c 80%,
+    #2d8a4e 80%,
+    #3a9d5c 85%,
+    #2d8a4e 85%,
+    #3a9d5c 90%,
+    #2d8a4e 90%,
+    #3a9d5c 95%,
+    #2d8a4e 95%,
+    #3a9d5c 100%
+  );
+  border-radius: 8px;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(0, 255, 135, 0.5); }
+  50% { box-shadow: 0 0 20px rgba(0, 255, 135, 0.8); }
+}
+
+.thinking-glow {
+  animation: pulse-glow 1.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.typing-effect {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(40, end);
+}
